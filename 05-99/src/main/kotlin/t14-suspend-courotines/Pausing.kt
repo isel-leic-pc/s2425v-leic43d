@@ -1,3 +1,5 @@
+package pt.isel.pc.jht.suspending.pausing
+
 import kotlin.coroutines.*
 
 import java.util.concurrent.Executors
@@ -35,7 +37,8 @@ fun main() {
         override val context: CoroutineContext = EmptyCoroutineContext
 
         override fun resumeWith(result: Result<Int>) {
-            println("T$tid: demo result -> $result")    
+            println("T$tid: demo result -> $result")
+            executor.shutdown()
         }
     }
 

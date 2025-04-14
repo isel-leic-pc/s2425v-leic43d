@@ -1,7 +1,6 @@
-import kotlin.coroutines.*
+package pt.isel.pc.jht.suspending.starting
 
-import java.util.concurrent.Executors
-import java.util.concurrent.TimeUnit
+import kotlin.coroutines.*
 
 val tid : Long
 	inline get() = Thread.currentThread().threadId()
