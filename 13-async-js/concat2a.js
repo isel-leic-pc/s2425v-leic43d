@@ -13,15 +13,15 @@ fs.readFile(inputFile1, 'utf8')
   .then(data1 =>
     fs.readFile(inputFile2, 'utf8')
       .then(data2 =>
-        data1 + '\n' + data2;
+        data1 + '\n' + data2
       );
   )
   .then(combined =>
-    fs.writeFile(outputFile, combined);
+    fs.writeFile(outputFile, combined)
   )
   .then(() =>
-    console.log(`File ${outputFile} written successfully.`);
+    console.log(`File ${outputFile} written successfully.`)
   )
   .catch(err =>
-    console.error('Error:', err.message);
+    console.error('Error:', err.message)
   );

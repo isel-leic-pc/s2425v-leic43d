@@ -31,15 +31,15 @@ readFileAsync(inputFile1, 'utf8')
   .then(data1 =>
     readFileAsync(inputFile2, 'utf8')
       .then(data2 =>
-        data1 + '\n' + data2;
+        data1 + '\n' + data2
       );
   )
   .then(combined =>
-    writeFileAsync(outputFile, combined);
+    writeFileAsync(outputFile, combined)
   )
   .then(() =>
-    console.log(`File ${outputFile} written successfully.`);
+    console.log(`File ${outputFile} written successfully.`)
   )
   .catch(err =>
-    console.error('Error:', err.message);
+    console.error('Error:', err.message)
   );

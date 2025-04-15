@@ -29,9 +29,9 @@ const [inputFile1, inputFile2, outputFile] = args;
 
 async function concatFiles() {
   try {
-	console.log('Reading file1')
+    console.log('Reading file1')
     const data1 = await readFileAsync(inputFile1, 'utf8');
-	console.log('Reading file2')
+    console.log('Reading file2')
     const data2 = await readFileAsync(inputFile2, 'utf8');
     const combined = data1 + '\n' + data2;
     await writeFileAsync(outputFile, combined);
