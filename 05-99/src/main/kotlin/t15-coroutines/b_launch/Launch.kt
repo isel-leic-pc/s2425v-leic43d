@@ -45,7 +45,7 @@ fun atrocious_delay(msDelay: Int) : Unit {
 
 // Try replacing one or more calls to delay with
 // this braindead_delay and check the differences
-fun braindead_delay(msDelay: Int) : Unit {
+fun braindead_delay(msDelay: Long) : Unit {
 	Thread.sleep(msDelay)
 }
 
